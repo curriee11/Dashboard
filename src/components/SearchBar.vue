@@ -17,7 +17,9 @@
 <style scoped>
 
 .s{
-  width: 680px;
+     width: 80%; /* Adjust width for smaller screens */
+  max-width: 553px; /* Limit maximum width */
+  /* width: 680px; */
   position: absolute;
   left: 269px; 
   top:22px;
@@ -29,4 +31,18 @@
   /* right: 230px!important; */
   /* color: var(--wh); */
 }
+
+/* Media query for small screens */
+@media only screen and (max-width: 600px) {
+  .s {
+    
+    width: 40%; /* Adjust width for smaller screens */
+    max-width: 130px; /* Limit maximum width */
+     left: 90px; 
+     /* height: 24px; */
+  }
+}
+
+
+
 </style>

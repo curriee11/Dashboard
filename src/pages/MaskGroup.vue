@@ -2,24 +2,23 @@
   <div :class="$style.maskGroup">
     <div :class="$style.dashboard">
       <div :class="$style.mainSection" />
-      <User1 />
-   
-     <Button /><SearchBar /><AppName /><MenuBar1 />
+     <NavBar/>
+     <MenuBar1 />
     </div>
   </div>
   
 </template>
 <script>
   import { defineComponent } from "vue";
-  import User1 from "../components/User1.vue";
-  import Button from "../components/Button.vue";
-  import SearchBar from "../components/SearchBar.vue";
-  import AppName from "../components/AppName.vue";
+
   import MenuBar1 from "../components/MenuBar1.vue";
+import NavBar from "../components/NavBar.vue"
 
   export default defineComponent({
     name: "MaskGroup",
-    components: { User1, Button, SearchBar, AppName, MenuBar1 },
+    components: { MenuBar1,
+    NavBar
+      },
   });
 </script>
 <style module>
@@ -50,6 +49,8 @@
     border-radius: 30px;
     background-color: var(--color-whitesmoke);
     width: 1777px;
+    /* width: auto; */
+    /* height: auto; */
     height: 920px;
     overflow: hidden;
   }
